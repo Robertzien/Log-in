@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+}
+
+body {
+    background-image: url(images/pexels-mali-maeder-142497.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.login {
+    position: absolute;
+    width: 360px;
+    height: 560px;
+    left: 60%;
+    background: rgb(230, 253, 220);
+    top: calc(50% - 560px / 2);
+    border-radius: 24px;
+    text-align: center;
+    padding: 1.75rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.title {
+    margin-bottom: 1.75rem;
+}
+  
+.logo {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 1.75rem;
+}
+
+.icon {
+    position: absolute;
+    z-index: 1;
+}
+
+.icon-tabler-lock {
+    top: 20%;
+}
+
+.icon-tabler-lock,
+.icon-tabler-mail {
+    top: 20%;
+    left: 10%;
+    margin-right: .5rem;
+}
+
+.icon-tabler-eye {
+    right: 10.5%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.icon-tabler-eye:hover {
+    opacity: 1;
+}
+
+input[type="email"], 
+input[type="password"] {
+    width: 85%;
+    padding: .6rem;
+    padding-left: 12.5%;
+    border-radius: 999rem;
+    border: solid .85px grey;
+}
+
+input[type="email"]:hover, 
+input[type="password"]:hover {
+    border: solid .85px black;
+}
+
+input[type="password"]:hover ~ .icon-tabler-eye {
+    opacity: 1;
+}
+
+.email,
+.password-top {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.email {
+    margin-bottom: 1rem;
+}
+
+.password-top {
+    margin-bottom: .5rem;
+}
+
+.password-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8%;
+}
+
+.password-forgotten {
+    font-size: 12px;
+}
+
+.password-forgotten:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-button {
+    margin-top: 1.5rem;
+    width: 85%;
+    border-radius: 999rem;
+    padding: .6rem;
+    background: #18AAAF;
+    background: linear-gradient(270deg, #18AAAF, #6BDB58);
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: linear-gradient(90deg, #18AAAF, #6BDB58);
+}
+
+.login-other {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle:nth-child(1),
+.circle:nth-child(2) {
+    margin-right: 1rem;
+}
+
+.circle {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.facebook {
+    background-color: #334C8C;
+}
+
+.twitter {
+    background-color: #4AA0EB;
+}
+
+.google {
+    background-color: #d94f40;
+}
+
+.heading {
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.madeby {
+    position: absolute;
+    bottom: .75rem;
+    left: 25%;
+    font-size: 14px;
+}
