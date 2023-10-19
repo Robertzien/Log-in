@@ -50,18 +50,20 @@ body {
     margin-right: .5rem;
 }
 
-.icon-tabler-eye {
+.icon-tabler-eye,
+.icon-tabler-eye-off {
     right: 10.5%;
     opacity: 0;
     cursor: pointer;
 }
 
-.icon-tabler-eye:hover {
+.icon-tabler-eye:hover,
+.icon-tabler-eye-off:hover {
     opacity: 1;
 }
 
-input[type="email"], 
-input[type="password"] {
+input {
+    border: solid .85px black;
     width: 85%;
     padding: .6rem;
     padding-left: 12.5%;
@@ -69,12 +71,8 @@ input[type="password"] {
     border: solid .85px grey;
 }
 
-input[type="email"]:hover, 
-input[type="password"]:hover {
-    border: solid .85px black;
-}
-
-input[type="password"]:hover ~ .icon-tabler-eye {
+input:hover ~ .icon-tabler-eye,
+input:hover ~ .icon-tabler-eye-off {
     opacity: 1;
 }
 
